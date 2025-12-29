@@ -1,0 +1,147 @@
+/* Menu Principal.php (M), Registro.php (R), Priorizacion.php (P) , Seguimiento.php (S), Formulario.php (F) Usuario.php (U) y Autorizacion.php (A) */
+
+
+/* Aplicado a las 7*/
+html,body { 
+        font-family: Arial, sans-serif; 
+        text-align: center;
+        height: 100%;
+        margin: 0;
+        padding:0;}
+        /*Todas las letras son arial y el texto esta alineado*/
+
+.Encabezado {
+        display: flex;
+        align-items:center;
+        justify-content: space-between; 
+        padding: 1% 1% 0% 5%;}
+        /*Cada contenedor esta separado menu y logobienvenida */
+
+.Menu{
+        flex-grow: 1;
+        text-align: center;}
+        /* */
+
+.Logo-Bienvenida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;} 
+        /**/
+
+/* Aplicado a R, F y A*/
+.Registro { 
+        background-color: orange; } 
+        /* en R tanto para buscar, agregar o modificar*/
+        /* En A para autorizar decision por el comite */ 
+        /* En F utilizado para Guardar Formulario*/
+        /* En U para modificar el Usuario y la contraseña*/
+
+/* Aplicado a R, A, S, F, U y P*/
+.Volver{ 
+        background-color: green;} 
+        /* Utilizado para devolver al menu principal y en P para sombrear Aprobado*/
+
+.btn { 
+        padding: 5px 10px; 
+        text-decoration: none; 
+        color: white; 
+        border-radius: 5px; }
+        /*Formato de Boton*/
+
+/* Aplicado a R, A, S, U y P*/
+
+th, td { 
+        border: 1px solid black;
+        padding: 5px;}
+        /* Diseño para tablas: encabezado y celdas*/
+
+table { 
+        width: 95%; 
+        margin: auto; 
+        border-collapse: collapse; } 
+        /* Utilizado para todas las tablas incluyendo table class=Usuario*/
+
+tr:hover{
+        background-color: #f2f2f2;} 
+        /* Utilizado para dar sombreado, cuando 🖲️ pasa por encima*/ 
+
+/* Aplicado a M, P y R*/
+.Salir {
+        background-color:red;} 
+        /*En M sirve para cerrar sesion, En P utilizado para sombrear Rechazados
+        En R para Eliminar, */
+        /* Utilizado en las ventanas para el boton Cerrar */
+
+/* Aplicado a M*/
+.Boton_Menu_Principal { 
+        padding: 10px 20px;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        display: inline-block; 
+        width: 25%;
+        max-width: 300px;
+        background-color: powderblue; } 
+        /*Dar formato al Boton de Menu Principal*/
+.Boton_Menu_Principal:hover {
+        background-color:#3498db;}
+        /*Utilizado para dar color a los Botones del Menu Principal*/
+
+/*Aplicado a U*/
+table.Usuario{
+        width: 80%; 
+        margin: auto; 
+        border-collapse: collapse;}
+        /*Para aplicarlo a una table Usuario*/
+
+.Modificar {
+        text-align: center;
+        margin-top: 2%;}
+        /*Para modificar un registro */
+
+footer {
+        margin: 0px;
+        padding: 0px;
+        height:1%;
+        text-align: center;
+        background-color:rgb(37, 177, 196);}
+        /*Crea un pie de pagina*/
+
+#contenedor {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;}
+main {  flex:1;}
+        /*Hecho para que el footer quede abajo*/
+
+/* Usado para archivo que requieran descripcion A, P y S */
+/* <!-- Estilos para la ventanas emergentes --> */
+#Ventana-{
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+ 
+#Ventana{
+        display: none;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        max-width: 80%;
+        max-height: 70%;
+        overflow-y: auto;
+        word-wrap: break-word;
+        }
+
+#Ventana button {
+margin-top: 10px;
+}

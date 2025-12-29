@@ -1,0 +1,28 @@
+/* 
+Este proyecto fue desarrollado utilizando XAMPP, una distribución gratuita que incluye Apache, MariaDB, PHP y Perl.
+XAMPP fue descargado desde el sitio oficial de Apache Friends: https://www.apachefriends.org/download.html
+
+Fecha del proyecto: 21/7/2025
+
+-- phpMyAdmin SQL Dump
+-- Versión: 5.2.1
+-- Sitio oficial: https://www.phpmyadmin.net/
+-- Host: 127.0.0.1
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+Tecnologías utilizadas en el desarrollo:
+- HTML5 para la estructura de las páginas web
+- CSS para el diseño y estilos visuales
+- JavaScript para la interactividad del lado del cliente
+- PHP para la lógica del servidor y gestión de sesiones
+- MySQL (MariaDB) como sistema de gestión de bases de datos relacional
+
+Entorno de desarrollo local:
+- Sistema operativo: Windows
+- Servidor web: Apache 2.4.58
+- Versión de PHP: 8.2.12
+- Gestor de base de datos: MariaDB 10.4.32
+- Panel de administración: phpMyAdmin 5.2.1
+- Control de servicios: XAMPP Control Panel 3.3
+*/
